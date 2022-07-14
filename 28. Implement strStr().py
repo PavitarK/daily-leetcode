@@ -20,11 +20,16 @@ def strStr(haystack, needle):
     if needle_length > len(haystack): 
         return -1
     
+    # window to parse string and check for matches
     for i in range(len(haystack)):
         if haystack[i:i+needle_length] == needle: 
             return i
     
     return -1
+
+def simpleStrStr(haystack, needle): 
+    # this is way faster but not custom implementation
+    return haystack.find(needle)
     
 
 if __name__ == "__main__": 
