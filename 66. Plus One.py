@@ -38,12 +38,13 @@ def plusOne(digits: list) -> list:
         
     return digits
 
+#simple method convert to integer, add one and convert to string
 def plusOneListToInt(digits: list) -> list: 
     return [int(a) for a in str((int(''.join(str(e) for e in digits))+1))]
     
 if __name__ == "__main__":
     digits = [9,9]
-    #result = plusOne(digits=digits) 
-    #print(f"Final Answer = {result}")
+    # result = plusOne(digits=digits) 
+    # print(f"Final Answer = {result}")
     result = plusOneListToInt(digits)
     print(f"Final Answer = {result}")
