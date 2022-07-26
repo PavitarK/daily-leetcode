@@ -23,7 +23,7 @@ def singleNumber(nums):
 # number doesn't have a pair 
 # don't need to parse the whole array
 
-def singleNumber(nums): 
+def singleNumberFast(nums): 
     nums.sort()
 
     for number in range(0,len(nums),2):
@@ -36,3 +36,7 @@ def singleNumber(nums):
             break
             
     return single
+
+n = [1,1,4,5,2,4,2]
+
+print(singleNumberFast(n))
