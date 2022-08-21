@@ -62,6 +62,8 @@ def climbStairsDynamicFast(n):
     
     Instead keep an array to look up values build bottom up.
     [1,1,2,3,5,8....]
+    
+    Solution Accepted!
     """
     # ways 0 and 1 are always 1, build pattern from there
     ways = [1,1]
