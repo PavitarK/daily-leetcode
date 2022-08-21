@@ -4,10 +4,7 @@ Valid Sudoku
 """
 
 def isValidSudoku(board): 
-    if not checkRows(board=board) or not checkCol(board) or not checkSquare(board): 
-        return False
-    else: 
-        return True
+    return checkRows(board=board) and checkCol(board) and checkSquare(board)
 
 def checkRows(board):
     for row in range(9):
