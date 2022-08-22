@@ -14,13 +14,9 @@ def majorityElement(nums):
     majority = int(len(nums)/2 + 1)
     
     for i in nums: 
-        if str(i) not in tracker:
-            tracker[str(i)] = 1
+        tracker[i] += 1
             
-        else: 
-            tracker[str(i)] += 1
-            
-        if tracker[str(i)] == majority:
+        if tracker[i] == majority:
             return i 
         
         print(tracker)
