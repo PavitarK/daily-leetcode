@@ -6,7 +6,7 @@ Fibonacci Number
 def fib(n): 
     """
     Approach: Dyanmic programming
-    Create a dyanmic array and fill 0-n 
+    Create a dyanmic array and fill 0-n+1
     return n 
     """   
     

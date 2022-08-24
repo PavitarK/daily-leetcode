@@ -14,12 +14,13 @@ def majorityElement(nums):
     majority = int(len(nums)/2 + 1)
     
     for i in nums: 
-        tracker[i] += 1
+        if i not in tracker:
+            tracker[i] = 1
+            
+        else: 
+            tracker[i] += 1
             
         if tracker[i] == majority:
-            return i 
-        
-        print(tracker)
-        
+            return i         
         
 print(f"The majority element is {majorityElement(nums=[2,2,1,1,1,2,2])}")
