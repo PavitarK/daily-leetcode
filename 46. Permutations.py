@@ -4,8 +4,6 @@ Permutations
 """
 
 def permute(nums): 
-    # the number of elements in input == output 
-    # the elements show up the same # of times in the input as output
     if len(nums) <= 1: 
         return [nums]
         
