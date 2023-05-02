@@ -11,7 +11,6 @@ def containsDuplicate(nums: list[int]) -> bool:
     nums.sort()
     i = 0
     while i < length-1:
-        print(i) 
         if nums[i] == nums[i+1]:
             return True
         i = i + 1
@@ -19,4 +18,3 @@ def containsDuplicate(nums: list[int]) -> bool:
     return False
 
 
-print(containsDuplicate(nums=[1,1,1,2,3,1]))
