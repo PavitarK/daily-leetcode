@@ -3,7 +3,7 @@ Leetcode Problem 1768
 Merge Strings Alternately
 """
 
-def mergeAlternately(self, word1: str, word2: str) -> str:
+def mergeAlternately(word1: str, word2: str) -> str:
         mergedString = ''
         ptr = 0 
         minLen = min(len(word1), len(word2))
