@@ -1,3 +1,4 @@
+import string
 def isPalindrome( s: str) -> bool:
     # Replace all spaces and remove punctuation
     # convert upper case to lowercase
@@ -17,3 +18,5 @@ def isPalindrome( s: str) -> bool:
         first +=1 
         last -=1
     return True
+
+print(isPalindrome(s="abccba"))
